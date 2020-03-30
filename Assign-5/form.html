@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="cont">
+        <form method="POST" action="save.php">
+            <p class="dm">National Workshop on Web Technology</p>
+            <p>
+                <h1 align="center">Enter your details</h1>
+            </p>
+            <input type="text" name="fname" placeholder="First Name" class="ipt">
+            <input type="text" name="lname" placeholder="Last Name" class="ipt">
+            <br>
+            <input style="width: 500px" type="email" name="email" placeholder="Enter valid  email" class="ipt">
+            <br><br>
+            <label>Gender: </label>
+            <label>Male</label><input type="radio" name="gender">
+            <label>Female</label><input type="radio" name="gender">
+            <br>
+            <label>Date of Birth</label><input type="date" name="dob" class="ipt">
+            <br>
+            <label>Enter your title</label>
+            <select class="selection" name="select">
+				<option>Title</option>
+				<option>Student</option>
+				<option>Faculty</option>
+				<option>Professional</option>
+				<option>Company Representative</option>
+			</select>
+            <br><br>
+            <label style="margin-top: 10px">Address</label><br>
+            <textarea id="txt" name="addr" placeholder="Enter your address" rows="6" cols="10"></textarea>
+            <br><br>
+            <label>Contact No.</label>
+            <input type="tel" name="telephone" pattern="[0-9]{10}">
+            <br><br>
+            <label>Fees for Workshop:    Rs.20 per head</label>
+            <br><br>
+            <input class="btn" type="submit" name="submit">
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
