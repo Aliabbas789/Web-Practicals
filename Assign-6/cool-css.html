@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cool CSS</title>
+    <link rel="stylesheet" type="text/css" href="cool-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="column active">
+            <div class="content">
+                <h1>1</h1>
+                <div class="box">
+                    <h2>Science Fact #1</h2>
+                    <p>
+                        A cloud can weigh over a million pounds.Your childhood dreams of floating on a weightless cloud may get rained on with this fact: the average cumulus cloud can weigh up to a million pounds. A million pounds!That’s about as heavy as the world’s largest
+                        passenger jet.
+                    </p>
+                </div>
+            </div>
+            <div class="bg bg1"></div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <h1>2</h1>
+                <div class="box">
+                    <h2>Science Fact #2</h2>
+                    <p>
+                        There are more trees on Earth than stars in our galaxy. NASA experts believe there could be anywhere from 100 billion to 400 billion stars in the Milky Way galaxy, Snopes reports. However, a 2015 paper published in the journal Nature estimated that the
+                        number of trees around the world is much higher: 3.04 trillion.
+                    </p>
+                </div>
+            </div>
+            <div class="bg bg2"></div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <h1>3</h1>
+                <div class="box">
+                    <h2>Science Fact #3</h2>
+                    <p>
+                        A teaspoonful of neutron star would weigh 6 billion tons. A neutron star is the remnants of a massive star that has run out of fuel. The dying star explodes in a supernova while its core collapses in on itself due to gravity, forming a super-dense neutron
+                        star.
+                    </p>
+                </div>
+            </div>
+            <div class="bg bg3"></div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <h1>4</h1>
+                <div class="box">
+                    <h2>Science Fact #4</h2>
+                    <p>
+                        A laser can get trapped in water. Yes, really. A cool thing called total internal reflection is applied when pointing a laser beam through a container of water. When light travels through water, it’s slowed by the heavier particles in water, as described
+                        here. Thus, the laser beam effectively gets “trapped” in the water.
+                    </p>
+                </div>
+            </div>
+            <div class="bg bg4"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).on('mouseover', '.container .column', function() {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    </script>
+</body>
+
+</html>
