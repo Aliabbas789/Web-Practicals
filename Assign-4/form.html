@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+
+<body background="wallpaper.jpg">
+    <h1 align="center">Simple Form</h1>
+    <table align="center">
+        <form method="post">
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="name" required></td>
+            </tr><br>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lname" required></td>
+            </tr><br>
+            <td>Age</td>
+            <td><input type="text" name="age" id="age" required></td>
+            </tr><br>
+            <tr>
+                <td>Email:</td>
+                <td><input placeholder="Enter valid email" type="email" class="text" name="email_18" id="amf-input-email_18" value="" maxlength="255" onkeyup="if(this.length>255) this.value=this.value.substr(0, 255)" onblur="checkemail(this.value)"></td>
+            </tr><br>
+            <tr>
+                <td>College:</td>
+                <td><input type="text" name="CollName"></td>
+            </tr><br>
+            <tr>
+                <td>Branch:</td>
+                <td><input type="text" name="Branch"></td>
+            </tr><br>
+            <tr>
+                <td>Gender:</td>
+                <td>Male<input type="radio" name="Male"> Female
+                    <input type="radio" name="Female"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button>Hit Me!</button>
+            </tr>
+        </form>
+    </table>
+
+    <script type="text/javascript">
+        function checkemail(email) {
+            var regex = /^[a-zA-Z0-9\.\_]+\@@{1}[a-zA-Z0-9]+\.\w{2,4}$/;
+            if (!regex.test(email)) {
+                alert('Please enter valid email id');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
